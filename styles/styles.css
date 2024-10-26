@@ -1,0 +1,113 @@
+@import url(./reset.css);
+@import url(./variables.css);
+@import url(./fonts.css);
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+.section {
+	padding: 80px 0 100px;
+}
+.section__title {
+	color: var(--color-dark-l);
+	font-family: Georgia;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 130%;
+	letter-spacing: 2.15px;
+	text-align: center;
+}
+.button {
+	display: inline-block;
+	padding: 15px 45px;
+	border-radius: 100px;
+	border: 0;
+	outline: none;
+	color: var(--color-dark-3xl);
+	font-family: 'Georgia Regular';
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 130%;
+	letter-spacing: 1px;
+	text-align: left;
+	color: var(--color-dark-3xl);
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+.button_primary {
+	background-color: var(--color-primary);
+}
+.button_secondary {
+	border: 2px solid var(--color-primary);
+	background-color: transparent;
+}
+.button_secondary__disabled {
+	color: #cdcdcd;
+	border: 2px solid #cdcdcd;
+}
+
+@media (hover: none) {
+	.button_primary {
+		background-color: var(--color-primary);
+	}
+
+	.button_secondary {
+		border: 2px solid var(--color-primary);
+		background-color: transparent;
+	}
+	.button_secondary__disabled {
+		color: #cdcdcd;
+		border: 2px solid #cdcdcd;
+	}
+}
+@media (hover: hover) {
+	.button {
+		cursor: pointer;
+		transition: 0.3s ease;
+	}
+	.button_primary:hover {
+		background-color: var(--color-primary-light);
+	}
+	.button_secondary:hover {
+		background-color: var(--color-primary-light);
+		border-color: var(--color-primary-light);
+	}
+	.button_secondary__disabled:hover {
+		color: #cdcdcd;
+		border: 2px solid #cdcdcd;
+		background-color: transparent;
+		cursor: default;
+	}
+}
+
+@media screen and (max-width: 1158px) {
+	.container {
+		padding: 0 30px;
+	}
+	.section {
+		padding: 66px 0 100px;
+	}
+}
+@media screen and (max-width: 664px) {
+	.container {
+		padding: 0 10px;
+	}
+	.section {
+		padding: 42px 0 42px;
+	}
+	.section__title {
+		font-size: 25px;
+		letter-spacing: 1.5px;
+	}
+}

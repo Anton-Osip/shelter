@@ -1,0 +1,138 @@
+/* ===> PETS START <=== */
+.pets {
+    background-color: var(--color-light-l);
+}
+
+.pets__title {
+}
+
+.pets__wrapper {
+    margin-top: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 40px;
+}
+
+.pets__item {
+    border-radius: 9px;
+    background-color: var(--color-light-2);
+    overflow: hidden;
+    padding-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.pets__item:hover {
+    background-color: var(--color-light-xl);
+    box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+.pets__item:hover .pets__button {
+    background-color: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+}
+
+.pets__image-wrapper {
+}
+
+.pets__image {
+}
+
+.pets__title-card {
+    color: var(--color-dark-l);
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 29px;
+}
+
+.pets__button {
+    padding: 14px 44px;
+}
+
+.pets__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+.control {
+}
+
+.control__button {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 115%;
+}
+
+@media (hover: none) {
+    .pets__item {
+        background-color: var(--color-light-2);
+    }
+}
+
+@media (hover: hover) {
+    .pets__item {
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+
+    .pets__item:hover {
+        background-color: var(--color-light-xl);
+        box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+    }
+
+    .pets__item:hover > .pets__button {
+        background-color: var(--color-primary-light);
+        border-color: var(--color-primary-light);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .pets {
+        padding: 81px 0 76px;
+    }
+
+    .pets__wrapper {
+        justify-content: center;
+        margin-top: 28px;
+    }
+
+    .pets__control {
+        margin-top: 37px;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .pets {
+        padding: 43px 0;
+    }
+
+    .pets__wrapper {
+        margin-top: 40px;
+    }
+
+    .pets__control {
+        margin-top: 39px;
+        gap: 10px;
+    }
+}
+
+/* ===> PETS START <=== */

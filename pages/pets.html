@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8"/>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+    <link type = "Image/x-icon" href = "../assets/icon/favicon.svg" rel = "icon"/>
+    <link rel = "stylesheet" href = "../styles/petsPage/petsPage.css"/>
+    <title>Shelter</title>
+    <script defer src = "../scripts/mobileMenu.js"></script>
+    <script defer src = "../scripts/pagination.js"></script>
+    <script defer src = "../scripts/modal.js"></script>
+</head>
+<body>
+<header class = "header">
+    <div class = "container">
+        <div class = "header__wrapper">
+            <a href = "main.html" class = "header__logo-wrapper">
+                <h3 class = "header__logo-title">Cozy House</h3>
+                <p class = "header__logo-subtitle">Shelter for pets in Boston</p>
+            </a>
+
+            <nav class = "header__nav nav">
+                <ul class = "nav__list">
+                    <li class = "nav__item">
+                        <a href = "main.html" class = "nav__link"> About the shelter </a>
+                    </li>
+                    <li class = "nav__item">
+                        <a href = "#" class = "nav__link nav__link--active"> Our pets </a>
+                    </li>
+                    <li class = "nav__item">
+                        <a href = "main.html#help" class = "nav__link">
+                            Help the shelter
+                        </a>
+                    </li>
+                    <li class = "nav__item">
+                        <a href = "#contacts" class = "nav__link"> Contacts </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav class = "mobile-nav header__nav nav">
+                <div class = "nav__bg"></div>
+                <ul class = "nav__list">
+                    <li class = "nav__item">
+                        <a href = "main.html" class = "nav__link"> About the shelter </a>
+                    </li>
+                    <li class = "nav__item">
+                        <a href = "#" class = "nav__link nav__link--active"> Our pets </a>
+                    </li>
+                    <li class = "nav__item">
+                        <a href = "main.html#help" class = "nav__link">
+                            Help the shelter
+                        </a>
+                    </li>
+                    <li class = "nav__item">
+                        <a href = "#contacts" class = "nav__link"> Contacts </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class = "header__burger burger">
+                <span class = "burger__line"></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class = "main">
+    <section class = "section pets">
+        <div class = "container">
+            <h1 class = "section__title pets__title">
+                Our friends who <br/>
+                are looking for a house
+            </h1>
+            <div class = "pets__wrapper">
+            </div>
+            <div class = "pets__control control">
+                <button
+                        class = "control__button--first control__button button button_secondary button_secondary__disabled"
+                >
+                    &lt;&lt;
+                </button>
+                <button
+                        class = "control__button--prev control__button button button_secondary button_secondary__disabled"
+                >
+                    &lt;
+                </button>
+                <button class = "control__button button button_primary">1</button>
+                <button class = "control__button--next control__button button button_secondary">></button>
+                <button class = "control__button--last control__button button button_secondary">>></button>
+            </div>
+        </div>
+    </section>
+    <div class = "modal"></div>
+</main>
+
+<footer class = "footer" id = "contacts">
+    <div class = "container">
+        <div class = "footer__wrapper">
+            <div class = "footer__block">
+                <h3 class = "footer__title">For questions and suggestions</h3>
+                <a
+                        href = "mailto:email@shelter.com"
+                        class = "footer__link footer__link--mail"
+                >
+                    email@shelter.com
+                </a>
+                <a href = "tel:+136745677554" class = "footer__link footer__link--tel">
+                    +13 674 567 75 54
+                </a>
+            </div>
+            <div class = "footer__block">
+                <h3 class = "footer__title">We are waiting for your visit</h3>
+                <a
+                        target = "_blank"
+                        href = "https://maps.app.goo.gl/wqULAwCgUAn4G8J2A"
+                        class = "footer__link footer__link--address"
+                >
+                    1 Central Street, Boston (entrance from the store)
+                </a>
+                <a
+                        target = "_blank"
+                        href = "https://maps.app.goo.gl/wqULAwCgUAn4G8J2A"
+                        class = "footer__link footer__link--address"
+                >
+                    18 South Park, London
+                </a>
+            </div>
+            <picture class = "footer__image-wrapper">
+                <source
+                        srcset = "../assets/image/footer-puppy.webp"
+                        type = "image/webp"
+                />
+                <img
+                        src = "../assets/image/footer-puppy.png"
+                        alt = "footer puppy"
+                        class = "footer__image"
+                />
+            </picture>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

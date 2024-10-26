@@ -1,0 +1,76 @@
+/* ===> ABOUT START <=== */
+.about__wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 120px;
+}
+.about__image-wrapper {
+	width: 300px;
+	height: 408px;
+}
+.about__image {
+	width: 100%;
+}
+.about__info {
+	padding: 14px 0;
+	max-width: 430px;
+	width: 100%;
+}
+.about__title {
+	text-align: left;
+	margin-bottom: 24px;
+}
+.about__text {
+	color: var(--color-dark-xl);
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 160%;
+	letter-spacing: 0px;
+	text-align: left;
+}
+.about__text:first-of-type {
+	margin-bottom: 25px;
+}
+@media screen and (max-width: 968px) {
+	.about__wrapper {
+		flex-direction: column;
+		align-items: center;
+		gap: 66px;
+	}
+	.about__image-wrapper {
+		order: 2;
+	}
+
+	.about__text:first-of-type {
+		margin-bottom: 26px;
+	}
+}
+@media screen and (max-width: 424px) {
+	.about__wrapper {
+		gap: 39px;
+	}
+	.about__info {
+		padding: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+	.about__title {
+		text-align: center;
+		margin-bottom: 23px;
+	}
+	.about__text {
+		padding: 0 15px;
+		text-align: justify;
+	}
+	.about__text:first-of-type {
+		margin-bottom: 22px;
+	}
+	.about__image-wrapper {
+		width: 260px;
+		height: 353px;
+		margin: 0 auto;
+	}
+}
+
+/* ===> ABOUT END <=== */
